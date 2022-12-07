@@ -1,0 +1,50 @@
+# packaging
+pip>=9
+setuptools>=26
+twine
+wheel>=0.29
+
+# data science
+numpy
+pandas
+scikit-learn
+colorama
+matplotlib
+ipdb
+seaborn
+scikit-learn
+tensorflow==2.10.0; sys_platform != 'darwin' # Windows & Ubuntu Intel chips
+
+# tests/linter
+black
+coverage
+flake8
+pytest
+yapf
+
+# prevent bq 3+ db-dtypes package error when running training from bq
+google-cloud-bigquery<3.0.0
+google-cloud-storage
+pyarrow
+
+# API
+gcsfs
+google-cloud-storage
+mlflow
+s3fs
+fastapi
+pytz
+uvicorn
+streamlit
+
+python-dotenv
+prefect<2
+prefect[viz]
+psycopg2-binary
+
+# utilities
+six>=1.14
+joblib
+memoized-property
+termcolor
+notebook
