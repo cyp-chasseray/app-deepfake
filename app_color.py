@@ -37,10 +37,10 @@ if st.button('Prédire'):
     if response.status_code == 200:
         wb = response.json()
         if wb['result'] < 0.5:
-            real = '<p style="font-family:sans-serif; color:Green; font-size: 20px;">Real</p>'
+            real = '<p style="font-family:sans-serif; color:White; font-size: 20px;">No DeepFake alteration detected</p>'
             st.markdown(real, unsafe_allow_html=True)
         else:
-            fake = '<p style="font-family:sans-serif; color:Red; font-size: 20px;">Fake</p>'
+            fake = '<p style="font-family:sans-serif; color:White; font-size: 20px;">DEEPFAKE ALERT!</p>'
             st.markdown(fake, unsafe_allow_html=True)
     else:
         st.write('Error ', str(response.status_code))
