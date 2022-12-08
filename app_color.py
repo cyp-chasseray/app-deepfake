@@ -23,7 +23,7 @@ with col3:
     st.write(' ')
 
 
-url = 'https://deepfakehuntersdef-bnv74lx52q-nw.a.run.app/predict'
+url = 'https://deepfakehunter-bnv74lx52q-nw.a.run.app/predict'
 
 uploaded_files = st.file_uploader("Choose photos to upload", accept_multiple_files=False, type=['png', 'jpeg', 'jpg'])
 if uploaded_files is not None:
@@ -44,4 +44,3 @@ if st.button('Prédire'):
             st.markdown(fake, unsafe_allow_html=True)
     else:
         st.write('Error ', str(response.status_code))
-
