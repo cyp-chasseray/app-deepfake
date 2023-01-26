@@ -1,1 +1,1 @@
-The simple app to be opened with Streamit Cloud to give life to our Deepfake Hunter App.
+The file needs to be opened with Streamlit Cloud to give life to the Deepfake Hunter App.
